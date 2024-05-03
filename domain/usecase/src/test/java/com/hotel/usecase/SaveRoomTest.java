@@ -35,8 +35,8 @@ class SaveRoomTest {
 
     @Test
     void save() {
-        Mockito.when(repository.save(Mockito.any(Room.class)).thenReturn(Mono.just(room)));
-        StepVerifier.create(saveRoom.save(Mockito.any()))
+        Mockito.when(repository.save(Mockito.any()).thenReturn(Mono.just(room)));
+        StepVerifier.create(saveRoom.save(room))
                 .verifyComplete();
 
     }

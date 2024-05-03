@@ -14,7 +14,8 @@ public class RoomMapper {
                 .quantity_guest(roomDataWeb.getQuantity_guest())
                 .availability(roomDataWeb.getAvailability())
                 .id_roomType(roomDataWeb.getId_roomType())
-                .floor(roomDataWeb.getFloor()).build();
+                .floor(roomDataWeb.getFloor())
+                .build();
     }
 
 }

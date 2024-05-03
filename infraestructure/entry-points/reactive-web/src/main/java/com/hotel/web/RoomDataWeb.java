@@ -26,4 +26,5 @@ public class RoomDataWeb implements Serializable {
     private  Integer id_roomType;
     @JsonProperty("Piso")
     private  Integer floor;
+
 }
